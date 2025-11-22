@@ -1,0 +1,28 @@
+[
+  {
+    "trigger": {
+      "url-filter": ".*",
+      "resource-type": ["image", "script", "style-sheet"],
+      "if-domain": ["*"]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "adservice|doubleclick|googlesyndication|adsystem|taboola|outbrain|admarvel|adcolony|adnxs"
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": ".*banner.*"
+    },
+    "action": {
+      "type": "block"
+    }
+  }
+]
