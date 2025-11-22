@@ -10,10 +10,7 @@ class WebViewController: NSObject, WKNavigationDelegate, WKUIDelegate, WKDownloa
     init(model: BrowserModel) {
         self.model = model
         super.init()
-        webView.navigationDelegate = self
-webView.uiDelegate = self
-webView.configuration.defaultWebpagePreferences.allowsContentJavaScript = true
-webView.configuration.websiteDataStore = .default()
+        
         let config = WKWebViewConfiguration()
         config.preferences.javaScriptEnabled = true
         config.defaultWebpagePreferences.allowsContentJavaScript = true
